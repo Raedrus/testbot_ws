@@ -1,11 +1,13 @@
 <launch>
-    <arg name="use_sim_time" default="false" description="Use sim time if true"/>
-
-    <node
-        pkg="robot_state_publisher"
-        exec="robot_state_publisher"
-        output="screen">
-        <param name="robot_description" value="$(command xacro $(find-pkg-share testbot)/description/test_robot.urdf.xacro)"/>
-        <param name="use_sim_time" value="$(arg use_sim_time)"/>
-    </node>
+  <!-- Declare the use_sim_time argument -->
+  <arg name="use_sim_time" default="false" description="Use simulation time if true" />
+  
+  <!-- Set the robot description parameter from the xacro file -->
+  <param name="robot_description" command="$(find xacro)/xacro $(find testbot)/description/test_robot.urdf.xacro" />
+  
+  <!-- Create the robot_state_publisher node -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+    <param name="robot_description" command="$(find xacro)/xacro $(find testbot)/description/test_robot.urdf.xacro" />
+    <param name="use_sim_time" value="$(arg use_sim_time)" />
+  </node>
 </launch>
