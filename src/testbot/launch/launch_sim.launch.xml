@@ -1,0 +1,12 @@
+<launch>
+	    <arg name="use_sim_time" default="true"/>
+
+
+        <include file="$(find-pkg-share testbot)/launch/rsp.launch.py">
+            <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+        </include>
+        
+        <executable name="gazebo" cmd="ign gazebo" output="screen"/>
+
+        <node pkg="ros_gz_sim" exec="create" args="-topic /robot_description" output="screen"/>
+</launch>

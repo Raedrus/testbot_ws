@@ -1,6 +1,5 @@
 <launch>
-  <!-- Declare the use_sim_time argument -->
-  <arg name="use_sim_time" default="false" description="Use simulation time if true" />
+  
   
   <!-- Set the robot description parameter from the xacro file -->
   <param name="robot_description" command="$(find xacro)/xacro $(find testbot)/description/test_robot.urdf.xacro" />
