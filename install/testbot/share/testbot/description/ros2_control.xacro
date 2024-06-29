@@ -3,7 +3,7 @@
 
     <ros2_control name="GazeboSimControl" type="system">
         <hardware>
-            <plugin>gz_ros2_control/GazeboSimControl</plugin>
+            <plugin>ign_ros2_control/GazeboSimControl</plugin>
         </hardware>
         
         <joint name="base_left_wheel_joint">
@@ -26,7 +26,7 @@
     </ros2_control>
 
     <gazebo>
-        <plugin filename="libign_ros2_control" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+        <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
             <!-- <robot_param>robot_description</robot_param>
             <robot_param_node>robot_state_publisher</robot_param_node> -->
             <parameters>$(find testbot)/config/controllers.yaml</parameters>
