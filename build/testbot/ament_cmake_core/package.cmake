@@ -5,7 +5,7 @@ set(testbot_BUILD_DEPENDS "rclcpp" "xacro" "robot_state_publisher" "controller_m
 set(testbot_BUILDTOOL_DEPENDS "ament_cmake")
 set(testbot_BUILD_EXPORT_DEPENDS "rclcpp" "xacro" "robot_state_publisher" "controller_manager" "ros2_control")
 set(testbot_BUILDTOOL_EXPORT_DEPENDS )
-set(testbot_EXEC_DEPENDS "rclcpp" "xacro" "robot_state_publisher" "controller_manager" "ros2_control")
+set(testbot_EXEC_DEPENDS "gz_ros2_control" "rclcpp" "xacro" "robot_state_publisher" "controller_manager" "ros2_control")
 set(testbot_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(testbot_GROUP_DEPENDS )
 set(testbot_MEMBER_OF_GROUPS )

@@ -6,7 +6,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-
+from launch.substitutions import PathJoinSubstitution
 from launch_ros.actions import Node
 
 from launch.actions import ExecuteProcess
@@ -19,6 +19,18 @@ def generate_launch_description():
 
     package_name='testbot' #<--- CHANGE ME
 
+    diff_drive_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["diff_cont"],
+    )
+
+    joint_broad_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_broad"],
+    )
+    
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
@@ -42,17 +54,8 @@ def generate_launch_description():
                         output='screen')
 
 
-    diff_drive_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["diff_cont"],
-    )
+    
 
-    joint_broad_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_broad"],
-    )
 
     # Launch them all!
     return LaunchDescription([
@@ -61,4 +64,5 @@ def generate_launch_description():
         diff_drive_spawner,
         joint_broad_spawner,
         spawn_entity,
+
     ])

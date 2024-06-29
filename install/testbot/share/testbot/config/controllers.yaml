@@ -12,7 +12,6 @@ controller_manager:
       type: joint_state_broadcaster/JointStateBroadcaster
 
 
-
 diff_cont:
   ros__parameters:
 
