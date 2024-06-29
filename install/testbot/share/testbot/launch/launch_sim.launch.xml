@@ -1,7 +1,6 @@
 <launch>
     <arg name="use_sim_time" default="true"/>
 
-
     <include file="$(find-pkg-share testbot)/launch/rsp.launch.py">
         <arg name="use_sim_time" value="$(var use_sim_time)"/>
     </include>
