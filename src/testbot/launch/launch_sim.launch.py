@@ -8,7 +8,7 @@ from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, TextSubstitution
 from launch.actions import ExecuteProcess
 
 def generate_launch_description():
@@ -19,16 +19,9 @@ def generate_launch_description():
 
     package_name='testbot' #<--- CHANGE ME
 
-    # Declare the launch argument for the world file
-    declare_world_cmd = DeclareLaunchArgument(
-        'world',
-        default_value=os.path.join(
-            get_package_share_directory(package_name), 'worlds', 'world_demo.sdf'),
-        description='Full path to the world file to load'
-    )
+    # # Declare the launch argument for the world file, 'empty.sdf' loaded at default.
+    # # Add world:=/path/to/desired/worldfile for manual world file selection.
 
-    # Get the launch configuration for the world file
-    world_file = LaunchConfiguration('world')
     # diff_drive_spawner = Node(
     #     package="controller_manager",
     #     executable="spawner",
@@ -54,7 +47,7 @@ def generate_launch_description():
     #          )
 
     gazebo = ExecuteProcess(
-            cmd=['ign', 'gazebo',world_file],
+            cmd=['ign', 'gazebo','src/testbot/worlds/obstacle.sdf'],
             output='screen'
         )
     
@@ -71,7 +64,7 @@ def generate_launch_description():
     return LaunchDescription([
         rsp,
         gazebo,
-        declare_world_cmd,
+        # declare_world_cmd,
         # diff_drive_spawner,
         # joint_broad_spawner,
         spawn_entity,
