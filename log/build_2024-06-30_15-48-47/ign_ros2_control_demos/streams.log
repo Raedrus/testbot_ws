@@ -1,0 +1,99 @@
+[0.012s] Invoking command in '/home/rae/testbot_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/rae/testbot_ws/src/gz_ros2_control-humble/ign_ros2_control_demos -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/ign_ros2_control_demos
+[0.020s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.110s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.115s] -- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.134s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.136s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.141s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.166s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.550s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.581s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.582s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.602s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.693s] -- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.715s] -- Found ament_cmake_gtest: 1.3.9 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.716s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.765s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.767s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.767s] -- Configured cppcheck include dirs: 
+[0.767s] -- Configured cppcheck exclude dirs and/or files: 
+[0.769s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.769s] -- Configured cpplint exclude dirs and/or files: 
+[0.769s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.770s] -- Added test 'lint_cmake' to check CMake code style
+[0.770s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.771s] -- Added test 'uncrustify' to check C / C++ code style
+[0.771s] -- Configured uncrustify additional arguments: 
+[0.772s] -- Added test 'xmllint' to check XML markup files
+[0.773s] -- Configuring done
+[0.796s] -- Generating done
+[0.798s] -- Build files have been written to: /home/rae/testbot_ws/build/ign_ros2_control_demos
+[0.806s] Invoked command in '/home/rae/testbot_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/rae/testbot_ws/src/gz_ros2_control-humble/ign_ros2_control_demos -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/ign_ros2_control_demos
+[0.807s] Invoking command in '/home/rae/testbot_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/rae/testbot_ws/build/ign_ros2_control_demos -- -j8 -l8
+[0.835s] [35m[1mConsolidate compiler generated dependencies of target example_tricycle_drive[0m
+[0.836s] [35m[1mConsolidate compiler generated dependencies of target example_diff_drive[0m
+[0.837s] [35m[1mConsolidate compiler generated dependencies of target example_velocity[0m
+[0.837s] [35m[1mConsolidate compiler generated dependencies of target example_position[0m
+[0.837s] [35m[1mConsolidate compiler generated dependencies of target example_gripper[0m
+[0.837s] [35m[1mConsolidate compiler generated dependencies of target example_effort[0m
+[0.853s] [  8%] [32m[1mLinking CXX executable example_tricycle_drive[0m
+[0.855s] [ 25%] [32m[1mLinking CXX executable example_diff_drive[0m
+[0.855s] [ 25%] [32m[1mLinking CXX executable example_gripper[0m
+[0.856s] [ 33%] [32m[1mLinking CXX executable example_velocity[0m
+[0.856s] [ 41%] [32m[1mLinking CXX executable example_effort[0m
+[0.856s] [ 50%] [32m[1mLinking CXX executable example_position[0m
+[1.184s] [ 58%] Built target example_gripper
+[1.196s] [ 66%] Built target example_velocity
+[1.198s] [ 75%] Built target example_effort
+[1.204s] [ 83%] Built target example_tricycle_drive
+[1.204s] [ 91%] Built target example_diff_drive
+[1.228s] [100%] Built target example_position
+[1.237s] Invoked command in '/home/rae/testbot_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/rae/testbot_ws/build/ign_ros2_control_demos -- -j8 -l8
+[1.264s] Invoking command in '/home/rae/testbot_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/rae/testbot_ws/build/ign_ros2_control_demos
+[1.269s] -- Install configuration: ""
+[1.269s] -- Execute custom install script
+[1.269s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_effort.launch.py
+[1.276s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_position.launch.py
+[1.282s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_velocity.launch.py
+[1.288s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/diff_drive_example.launch.py
+[1.295s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py
+[1.301s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/pendulum_example_effort.launch.py
+[1.308s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/pendulum_example_position.launch.py
+[1.314s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/tricycle_drive_example.launch.py
+[1.321s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/cart_controller_effort.yaml
+[1.327s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/cart_controller_position.yaml
+[1.334s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/cart_controller_velocity.yaml
+[1.341s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/diff_drive_controller_velocity.yaml
+[1.348s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/gripper_controller.yaml
+[1.354s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/tricycle_drive_controller.yaml
+[1.361s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_cart_effort.xacro.urdf
+[1.367s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_cart_position.xacro.urdf
+[1.374s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_cart_velocity.xacro.urdf
+[1.380s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_diff_drive.xacro.urdf
+[1.387s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_gripper_mimic_joint.xacro.urdf
+[1.394s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_pendulum_effort.xacro.urdf
+[1.402s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_pendulum_position.xacro.urdf
+[1.408s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_tricycle_drive.xacro.urdf
+[1.415s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_position
+[1.421s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_velocity
+[1.428s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_effort
+[1.434s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_diff_drive
+[1.440s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_tricycle_drive
+[1.446s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_gripper
+[1.452s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/ign_ros2_control_demos
+[1.460s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/ign_ros2_control_demos
+[1.471s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/ament_prefix_path.sh
+[1.479s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/ament_prefix_path.dsv
+[1.489s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/path.sh
+[1.499s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/path.dsv
+[1.508s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.bash
+[1.517s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.sh
+[1.525s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.zsh
+[1.531s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.dsv
+[1.537s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.dsv
+[1.544s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/packages/ign_ros2_control_demos
+[1.549s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/cmake/ign_ros2_control_demosConfig.cmake
+[1.558s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/cmake/ign_ros2_control_demosConfig-version.cmake
+[1.565s] -- Symlinking: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.xml
+[1.572s] Invoked command in '/home/rae/testbot_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/rae/testbot_ws/build/ign_ros2_control_demos

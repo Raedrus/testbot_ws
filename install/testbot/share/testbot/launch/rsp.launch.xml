@@ -1,7 +1,1 @@
-<launch>
-  <!-- Create the robot_state_publisher node -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
-    <param name="robot_description" value="$(find-pkg-share testbot)/description/test_robot.urdf.xacro" />
-    <param name="use_sim_time" value="true" />
-  </node>
-</launch>
+/home/rae/testbot_ws/src/testbot/launch/rsp.launch.xml

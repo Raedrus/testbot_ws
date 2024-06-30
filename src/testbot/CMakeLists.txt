@@ -1,6 +1,18 @@
 cmake_minimum_required(VERSION 3.8)
 project(testbot)
 
+
+# Default to C11
+if(NOT CMAKE_C_STANDARD)
+  set(CMAKE_C_STANDARD 11)
+endif()
+# Default to C++17
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+endif()
+
+
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
@@ -21,11 +33,13 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY
-  launch
-  description
-  config
-  worlds
-  DESTINATION share/${PROJECT_NAME}/
+install(
+  DIRECTORY
+    launch
+    description
+    config
+    worlds
+  DESTINATION 
+    share/${PROJECT_NAME}/
 )
 ament_package()

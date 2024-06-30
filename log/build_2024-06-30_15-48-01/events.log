@@ -1,0 +1,752 @@
+[0.000000] (-) TimerEvent: {}
+[0.000124] (ign_ros2_control) JobQueued: {'identifier': 'ign_ros2_control', 'dependencies': OrderedDict()}
+[0.000214] (gz_ros2_control_tests) JobQueued: {'identifier': 'gz_ros2_control_tests', 'dependencies': OrderedDict([('ign_ros2_control', '/home/rae/testbot_ws/install/ign_ros2_control')])}
+[0.000230] (ign_ros2_control_demos) JobQueued: {'identifier': 'ign_ros2_control_demos', 'dependencies': OrderedDict([('ign_ros2_control', '/home/rae/testbot_ws/install/ign_ros2_control')])}
+[0.000406] (testbot) JobQueued: {'identifier': 'testbot', 'dependencies': OrderedDict([('ign_ros2_control', '/home/rae/testbot_ws/install/ign_ros2_control')])}
+[0.000498] (ign_ros2_control) JobStarted: {'identifier': 'ign_ros2_control'}
+[0.006225] (ign_ros2_control) JobProgress: {'identifier': 'ign_ros2_control', 'progress': 'cmake'}
+[0.006327] (ign_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '/home/rae/testbot_ws/src/gz_ros2_control-humble/ign_ros2_control', '-DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/ign_ros2_control'], 'cwd': '/home/rae/testbot_ws/build/ign_ros2_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/ign_ros2_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.044817] (ign_ros2_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.086300] (ign_ros2_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.091044] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099936] (-) TimerEvent: {}
+[0.142657] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.147776] (ign_ros2_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.147907] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.148186] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.150166] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200047] (-) TimerEvent: {}
+[0.211392] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.216335] (ign_ros2_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.216535] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.216859] (ign_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.218564] (ign_ros2_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300135] (-) TimerEvent: {}
+[0.323427] (ign_ros2_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.384306] (ign_ros2_control) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)\n'}
+[0.385662] (ign_ros2_control) StdoutLine: {'line': b'-- Found controller_manager: 2.41.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[0.400251] (-) TimerEvent: {}
+[0.423931] (ign_ros2_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.427968] (ign_ros2_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.434340] (ign_ros2_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.443379] (ign_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.456270] (ign_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500340] (-) TimerEvent: {}
+[0.600580] (-) TimerEvent: {}
+[0.700839] (-) TimerEvent: {}
+[0.801094] (-) TimerEvent: {}
+[0.886665] (ign_ros2_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.888542] (ign_ros2_control) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.901199] (-) TimerEvent: {}
+[0.910145] (ign_ros2_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.916362] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.973007] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.973162] (ign_ros2_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.001381] (-) TimerEvent: {}
+[1.026402] (ign_ros2_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.027272] (ign_ros2_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.101491] (-) TimerEvent: {}
+[1.201747] (-) TimerEvent: {}
+[1.301994] (-) TimerEvent: {}
+[1.402222] (-) TimerEvent: {}
+[1.423162] (ign_ros2_control) StdoutLine: {'line': b'-- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)\n'}
+[1.426036] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-gazebo6 -- found version 6.16.0\n'}
+[1.430468] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gazebo6\n'}
+[1.431826] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[1.432078] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of sdformat12\n'}
+[1.436023] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.445318] (ign_ros2_control) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.467773] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.468054] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.469984] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.470153] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1\n'}
+[1.472360] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.472675] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[1.472989] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [loader]\n'}
+[1.474299] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1-loader -- found version 1.4.0\n'}
+[1.474691] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-loader\n'}
+[1.474876] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[1.476302] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1-register -- found version 1.4.0\n'}
+[1.476696] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-register\n'}
+[1.478550] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.478703] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[1.494923] (ign_ros2_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.502110] (ign_ros2_control) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.502215] (-) TimerEvent: {}
+[1.505649] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.514815] (ign_ros2_control) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.540191] (ign_ros2_control) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.544866] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.554684] (ign_ros2_control) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.584623] (ign_ros2_control) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.585216] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.585795] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1\n'}
+[1.585896] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-utils1> component [cli]\n'}
+[1.588133] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-utils1-cli -- found version 1.5.1\n'}
+[1.588588] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1-cli\n'}
+[1.590697] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.591022] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs8\n'}
+[1.602363] (-) TimerEvent: {}
+[1.603051] (ign_ros2_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.603588] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.611519] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [log]\n'}
+[1.612957] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-transport11-log -- found version 11.4.1\n'}
+[1.613287] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-log\n'}
+[1.613667] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [parameters]\n'}
+[1.615115] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-transport11-parameters -- found version 11.4.1\n'}
+[1.615485] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-parameters\n'}
+[1.616193] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.617670] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.618116] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[1.618241] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.618866] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.619928] (ign_ros2_control) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.625890] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[1.627440] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4-profiler -- found version 4.7.0\n'}
+[1.627766] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-profiler\n'}
+[1.628022] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[1.629545] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4-events -- found version 4.7.0\n'}
+[1.629928] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-events\n'}
+[1.630197] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.630617] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [av]\n'}
+[1.632081] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4-av -- found version 4.7.0\n'}
+[1.632491] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-av\n'}
+[1.637100] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[1.646714] (ign_ros2_control) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[1.675533] (ign_ros2_control) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[1.682700] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[1.694183] (ign_ros2_control) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[1.702477] (-) TimerEvent: {}
+[1.733722] (ign_ros2_control) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[1.740016] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.754324] (ign_ros2_control) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[1.802612] (-) TimerEvent: {}
+[1.810734] (ign_ros2_control) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.818237] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.834003] (ign_ros2_control) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[1.890495] (ign_ros2_control) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.898317] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.902712] (-) TimerEvent: {}
+[1.915339] (ign_ros2_control) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[1.974708] (ign_ros2_control) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.979878] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools7 -- found version 7.3.0\n'}
+[1.980686] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools7\n'}
+[2.002836] (-) TimerEvent: {}
+[2.043172] (ign_ros2_control) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.049916] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.059001] (ign_ros2_control) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.087068] (ign_ros2_control) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.092095] (ign_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.102523] (ign_ros2_control) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.102893] (-) TimerEvent: {}
+[2.135296] (ign_ros2_control) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.135865] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.136552] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.137155] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.139907] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-gui6 -- found version 6.8.0\n'}
+[2.140142] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gui6\n'}
+[2.159206] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.159366] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.159440] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.159741] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[2.161290] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[2.161608] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-rendering6\n'}
+[2.161877] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.162082] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.162146] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-math6> component [eigen3]\n'}
+[2.163550] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6-eigen3 -- found version 6.15.1\n'}
+[2.163802] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6-eigen3\n'}
+[2.168946] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.169086] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[2.169132] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.169171] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.176008] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [graphics]\n'}
+[2.177428] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4-graphics -- found version 4.7.0\n'}
+[2.177625] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-graphics\n'}
+[2.177879] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.178135] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.178628] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[2.179158] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.179424] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[2.179489] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [all]\n'}
+[2.181072] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for all libraries of ignition-plugin1 -- found version 1.4.0\n'}
+[2.181211] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.182706] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.195774] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-physics5 -- found version 5.3.2\n'}
+[2.195919] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5\n'}
+[2.196151] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.196582] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.196842] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.197711] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [heightmap]\n'}
+[2.199201] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-physics5-heightmap -- found version 5.3.2\n'}
+[2.199560] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-heightmap\n'}
+[2.199858] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.200219] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [mesh]\n'}
+[2.201752] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-physics5-mesh -- found version 5.3.2\n'}
+[2.202075] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-mesh\n'}
+[2.202320] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.202733] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [sdf]\n'}
+[2.202958] (-) TimerEvent: {}
+[2.204170] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-physics5-sdf -- found version 5.3.2\n'}
+[2.204643] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-sdf\n'}
+[2.204836] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[2.206612] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.206974] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6\n'}
+[2.219481] (ign_ros2_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.220116] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.220684] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.220926] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[2.221376] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[2.221579] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.221902] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[2.222399] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [air_pressure]\n'}
+[2.223967] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-air_pressure -- found version 6.8.0\n'}
+[2.224271] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-air_pressure\n'}
+[2.224773] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [altimeter]\n'}
+[2.226129] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-altimeter -- found version 6.8.0\n'}
+[2.226290] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-altimeter\n'}
+[2.226551] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [imu]\n'}
+[2.228060] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-imu -- found version 6.8.0\n'}
+[2.228250] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-imu\n'}
+[2.228651] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [force_torque]\n'}
+[2.230036] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-force_torque -- found version 6.8.0\n'}
+[2.230312] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-force_torque\n'}
+[2.230624] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [logical_camera]\n'}
+[2.232127] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-logical_camera -- found version 6.8.0\n'}
+[2.232473] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-logical_camera\n'}
+[2.232853] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [magnetometer]\n'}
+[2.234291] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-magnetometer -- found version 6.8.0\n'}
+[2.234466] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-magnetometer\n'}
+[2.234854] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [navsat]\n'}
+[2.236289] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-navsat -- found version 6.8.0\n'}
+[2.236501] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-navsat\n'}
+[2.236905] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rendering]\n'}
+[2.238273] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rendering -- found version 6.8.0\n'}
+[2.238582] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rendering\n'}
+[2.238858] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [lidar]\n'}
+[2.240274] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-lidar -- found version 6.8.0\n'}
+[2.240580] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-lidar\n'}
+[2.240930] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.241266] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [gpu_lidar]\n'}
+[2.242778] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.0\n'}
+[2.243064] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-gpu_lidar\n'}
+[2.243307] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.243689] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [camera]\n'}
+[2.245088] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-camera -- found version 6.8.0\n'}
+[2.245316] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-camera\n'}
+[2.245556] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.245976] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [boundingbox_camera]\n'}
+[2.247356] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.0\n'}
+[2.247552] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-boundingbox_camera\n'}
+[2.247858] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [segmentation_camera]\n'}
+[2.249315] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.0\n'}
+[2.249541] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-segmentation_camera\n'}
+[2.249947] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [depth_camera]\n'}
+[2.251351] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-depth_camera -- found version 6.8.0\n'}
+[2.251643] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-depth_camera\n'}
+[2.251851] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.252231] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rgbd_camera]\n'}
+[2.253647] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.0\n'}
+[2.253927] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rgbd_camera\n'}
+[2.254174] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.254545] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [thermal_camera]\n'}
+[2.255969] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6-thermal_camera -- found version 6.8.0\n'}
+[2.256360] (ign_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-thermal_camera\n'}
+[2.256612] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.257334] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[2.257573] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.260027] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.273965] (ign_ros2_control) StdoutLine: {'line': b'-- Compiling against Ignition Fortress\n'}
+[2.274239] (ign_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.303062] (-) TimerEvent: {}
+[2.403333] (-) TimerEvent: {}
+[2.503591] (-) TimerEvent: {}
+[2.603832] (-) TimerEvent: {}
+[2.625012] (ign_ros2_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.683269] (ign_ros2_control) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.683951] (ign_ros2_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.684064] (ign_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/rae/testbot_ws/src/gz_ros2_control-humble/ign_ros2_control/include\n'}
+[2.684118] (ign_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.684814] (ign_ros2_control) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.684894] (ign_ros2_control) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.685269] (ign_ros2_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.686002] (ign_ros2_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.686093] (ign_ros2_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.686234] (ign_ros2_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.687506] (ign_ros2_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.703924] (-) TimerEvent: {}
+[2.715960] (ign_ros2_control) StdoutLine: {'line': b'-- Generating done\n'}
+[2.717730] (ign_ros2_control) StdoutLine: {'line': b'-- Build files have been written to: /home/rae/testbot_ws/build/ign_ros2_control\n'}
+[2.728709] (ign_ros2_control) CommandEnded: {'returncode': 0}
+[2.730398] (ign_ros2_control) JobProgress: {'identifier': 'ign_ros2_control', 'progress': 'build'}
+[2.730425] (ign_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rae/testbot_ws/build/ign_ros2_control', '--', '-j8', '-l8'], 'cwd': '/home/rae/testbot_ws/build/ign_ros2_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/ign_ros2_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[2.771375] (ign_ros2_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ign_hardware_plugins.dir/src/ign_system.cpp.o\x1b[0m\n'}
+[2.771524] (ign_ros2_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ign_ros2_control-system.dir/src/ign_ros2_control_plugin.cpp.o\x1b[0m\n'}
+[2.804054] (-) TimerEvent: {}
+[2.904319] (-) TimerEvent: {}
+[3.004641] (-) TimerEvent: {}
+[3.104944] (-) TimerEvent: {}
+[3.205275] (-) TimerEvent: {}
+[3.305566] (-) TimerEvent: {}
+[3.405869] (-) TimerEvent: {}
+[3.506147] (-) TimerEvent: {}
+[3.606425] (-) TimerEvent: {}
+[3.706706] (-) TimerEvent: {}
+[3.806980] (-) TimerEvent: {}
+[3.907251] (-) TimerEvent: {}
+[4.007556] (-) TimerEvent: {}
+[4.107842] (-) TimerEvent: {}
+[4.208139] (-) TimerEvent: {}
+[4.308456] (-) TimerEvent: {}
+[4.408824] (-) TimerEvent: {}
+[4.509157] (-) TimerEvent: {}
+[4.609477] (-) TimerEvent: {}
+[4.709830] (-) TimerEvent: {}
+[4.810189] (-) TimerEvent: {}
+[4.910540] (-) TimerEvent: {}
+[5.010885] (-) TimerEvent: {}
+[5.111244] (-) TimerEvent: {}
+[5.211614] (-) TimerEvent: {}
+[5.311999] (-) TimerEvent: {}
+[5.412313] (-) TimerEvent: {}
+[5.512654] (-) TimerEvent: {}
+[5.612940] (-) TimerEvent: {}
+[5.713273] (-) TimerEvent: {}
+[5.813572] (-) TimerEvent: {}
+[5.913937] (-) TimerEvent: {}
+[6.014242] (-) TimerEvent: {}
+[6.114547] (-) TimerEvent: {}
+[6.214832] (-) TimerEvent: {}
+[6.315137] (-) TimerEvent: {}
+[6.415431] (-) TimerEvent: {}
+[6.515781] (-) TimerEvent: {}
+[6.616098] (-) TimerEvent: {}
+[6.716438] (-) TimerEvent: {}
+[6.816769] (-) TimerEvent: {}
+[6.917094] (-) TimerEvent: {}
+[7.017439] (-) TimerEvent: {}
+[7.117751] (-) TimerEvent: {}
+[7.218056] (-) TimerEvent: {}
+[7.318358] (-) TimerEvent: {}
+[7.418636] (-) TimerEvent: {}
+[7.518907] (-) TimerEvent: {}
+[7.619204] (-) TimerEvent: {}
+[7.719519] (-) TimerEvent: {}
+[7.819862] (-) TimerEvent: {}
+[7.920175] (-) TimerEvent: {}
+[8.020562] (-) TimerEvent: {}
+[8.120882] (-) TimerEvent: {}
+[8.221206] (-) TimerEvent: {}
+[8.321561] (-) TimerEvent: {}
+[8.421834] (-) TimerEvent: {}
+[8.522129] (-) TimerEvent: {}
+[8.622487] (-) TimerEvent: {}
+[8.722826] (-) TimerEvent: {}
+[8.823159] (-) TimerEvent: {}
+[8.923484] (-) TimerEvent: {}
+[9.023829] (-) TimerEvent: {}
+[9.124198] (-) TimerEvent: {}
+[9.224592] (-) TimerEvent: {}
+[9.324940] (-) TimerEvent: {}
+[9.425312] (-) TimerEvent: {}
+[9.525679] (-) TimerEvent: {}
+[9.626015] (-) TimerEvent: {}
+[9.726364] (-) TimerEvent: {}
+[9.826729] (-) TimerEvent: {}
+[9.927078] (-) TimerEvent: {}
+[10.027406] (-) TimerEvent: {}
+[10.127725] (-) TimerEvent: {}
+[10.228047] (-) TimerEvent: {}
+[10.328385] (-) TimerEvent: {}
+[10.428709] (-) TimerEvent: {}
+[10.529028] (-) TimerEvent: {}
+[10.629351] (-) TimerEvent: {}
+[10.729679] (-) TimerEvent: {}
+[10.829995] (-) TimerEvent: {}
+[10.930316] (-) TimerEvent: {}
+[11.030663] (-) TimerEvent: {}
+[11.131012] (-) TimerEvent: {}
+[11.231364] (-) TimerEvent: {}
+[11.331693] (-) TimerEvent: {}
+[11.431994] (-) TimerEvent: {}
+[11.532348] (-) TimerEvent: {}
+[11.632671] (-) TimerEvent: {}
+[11.733095] (-) TimerEvent: {}
+[11.781897] (ign_ros2_control) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libign_hardware_plugins.so\x1b[0m\n'}
+[11.833197] (-) TimerEvent: {}
+[11.933482] (-) TimerEvent: {}
+[12.017367] (ign_ros2_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libign_ros2_control-system.so\x1b[0m\n'}
+[12.033603] (-) TimerEvent: {}
+[12.133964] (-) TimerEvent: {}
+[12.234297] (-) TimerEvent: {}
+[12.274051] (ign_ros2_control) StdoutLine: {'line': b'[100%] Built target ign_hardware_plugins\n'}
+[12.334466] (-) TimerEvent: {}
+[12.434912] (-) TimerEvent: {}
+[12.535179] (-) TimerEvent: {}
+[12.613005] (ign_ros2_control) StdoutLine: {'line': b'[100%] Built target ign_ros2_control-system\n'}
+[12.621635] (ign_ros2_control) CommandEnded: {'returncode': 0}
+[12.635340] (-) TimerEvent: {}
+[12.644661] (ign_ros2_control) JobProgress: {'identifier': 'ign_ros2_control', 'progress': 'install'}
+[12.651886] (ign_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rae/testbot_ws/build/ign_ros2_control'], 'cwd': '/home/rae/testbot_ws/build/ign_ros2_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/ign_ros2_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[12.657807] (ign_ros2_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.657953] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/lib/libign_hardware_plugins.so\n'}
+[12.660348] (ign_ros2_control) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control/lib/libign_hardware_plugins.so" to ""\n'}
+[12.660566] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/include\n'}
+[12.660640] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/include/ign_ros2_control\n'}
+[12.660682] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/include/ign_ros2_control/ign_system.hpp\n'}
+[12.660722] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/include/ign_ros2_control/ign_ros2_control_plugin.hpp\n'}
+[12.660762] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/include/ign_ros2_control/ign_system_interface.hpp\n'}
+[12.660828] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/environment/library_path.sh\n'}
+[12.660875] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/environment/library_path.dsv\n'}
+[12.660913] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/lib/libign_ros2_control-system.so\n'}
+[12.663752] (ign_ros2_control) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control/lib/libign_ros2_control-system.so" to ""\n'}
+[12.663955] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/ign_hardware_plugins.xml\n'}
+[12.664038] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ament_index/resource_index/package_run_dependencies/ign_ros2_control\n'}
+[12.664126] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ament_index/resource_index/parent_prefix_path/ign_ros2_control\n'}
+[12.664209] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.sh\n'}
+[12.664537] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.dsv\n'}
+[12.664666] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/environment/path.sh\n'}
+[12.664741] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/environment/path.dsv\n'}
+[12.664862] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.bash\n'}
+[12.664962] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.sh\n'}
+[12.665040] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.zsh\n'}
+[12.665105] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.dsv\n'}
+[12.665172] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/package.dsv\n'}
+[12.665275] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ament_index/resource_index/packages/ign_ros2_control\n'}
+[12.665379] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ament_index/resource_index/ign_ros2_control__pluginlib__plugin/ign_ros2_control\n'}
+[12.665497] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.665653] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.665749] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig.cmake\n'}
+[12.665828] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig-version.cmake\n'}
+[12.665893] (ign_ros2_control) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control/share/ign_ros2_control/package.xml\n'}
+[12.667447] (ign_ros2_control) CommandEnded: {'returncode': 0}
+[12.701440] (ign_ros2_control) JobEnded: {'identifier': 'ign_ros2_control', 'rc': 0}
+[12.702143] (gz_ros2_control_tests) JobStarted: {'identifier': 'gz_ros2_control_tests'}
+[12.704463] (ign_ros2_control_demos) JobStarted: {'identifier': 'ign_ros2_control_demos'}
+[12.707179] (testbot) JobStarted: {'identifier': 'testbot'}
+[12.710737] (gz_ros2_control_tests) JobProgress: {'identifier': 'gz_ros2_control_tests', 'progress': 'cmake'}
+[12.710871] (gz_ros2_control_tests) Command: {'cmd': ['/usr/bin/cmake', '/home/rae/testbot_ws/src/gz_ros2_control-humble/gz_ros2_control_tests', '-DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/gz_ros2_control_tests'], 'cwd': '/home/rae/testbot_ws/build/gz_ros2_control_tests', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/gz_ros2_control_tests'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[12.712624] (ign_ros2_control_demos) JobProgress: {'identifier': 'ign_ros2_control_demos', 'progress': 'cmake'}
+[12.712701] (ign_ros2_control_demos) Command: {'cmd': ['/usr/bin/cmake', '/home/rae/testbot_ws/src/gz_ros2_control-humble/ign_ros2_control_demos', '-DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/ign_ros2_control_demos'], 'cwd': '/home/rae/testbot_ws/build/ign_ros2_control_demos', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/ign_ros2_control_demos'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[12.715194] (testbot) JobProgress: {'identifier': 'testbot', 'progress': 'cmake'}
+[12.715630] (testbot) JobProgress: {'identifier': 'testbot', 'progress': 'build'}
+[12.715978] (testbot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rae/testbot_ws/build/testbot', '--', '-j8', '-l8'], 'cwd': '/home/rae/testbot_ws/build/testbot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/testbot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[12.735463] (-) TimerEvent: {}
+[12.747276] (testbot) CommandEnded: {'returncode': 0}
+[12.751642] (gz_ros2_control_tests) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[12.752862] (ign_ros2_control_demos) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[12.765320] (testbot) JobProgress: {'identifier': 'testbot', 'progress': 'install'}
+[12.765668] (testbot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rae/testbot_ws/build/testbot'], 'cwd': '/home/rae/testbot_ws/build/testbot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/testbot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[12.771949] (testbot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.772216] (testbot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.772615] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//launch/launch_sim.launch.py\n'}
+[12.772754] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//launch/launch_sim.launch.xml\n'}
+[12.772848] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//launch/rsp.launch.py\n'}
+[12.772929] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//launch/rsp.launch.xml\n'}
+[12.773195] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//description/inertial_macros.xacro\n'}
+[12.773309] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//description/lidar.xacro\n'}
+[12.773374] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//description/ros2_control.xacro\n'}
+[12.773468] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//description/test_robot.urdf.xacro\n'}
+[12.773563] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//description/test_robot_core.xacro\n'}
+[12.773774] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//config/controllers.yaml\n'}
+[12.773869] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//config/view_bot.rviz\n'}
+[12.774092] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//worlds/empty.sdf\n'}
+[12.774182] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//worlds/obstacle.sdf\n'}
+[12.774276] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//worlds/testmap.sdf\n'}
+[12.774370] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot//worlds/world_demo.sdf\n'}
+[12.774569] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/ament_index/resource_index/package_run_dependencies/testbot\n'}
+[12.774727] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/ament_index/resource_index/parent_prefix_path/testbot\n'}
+[12.774877] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/environment/ament_prefix_path.sh\n'}
+[12.775024] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/environment/ament_prefix_path.dsv\n'}
+[12.775171] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/environment/path.sh\n'}
+[12.775317] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/environment/path.dsv\n'}
+[12.775449] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/local_setup.bash\n'}
+[12.775587] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/local_setup.sh\n'}
+[12.775721] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/local_setup.zsh\n'}
+[12.775856] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/local_setup.dsv\n'}
+[12.775970] (testbot) StdoutLine: {'line': b'-- Symlinking: /home/rae/testbot_ws/install/testbot/share/testbot/package.dsv\n'}
+[12.783470] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/ament_index/resource_index/packages/testbot\n'}
+[12.783642] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/cmake/testbotConfig.cmake\n'}
+[12.783689] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/cmake/testbotConfig-version.cmake\n'}
+[12.783761] (testbot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rae/testbot_ws/install/testbot/share/testbot/package.xml\n'}
+[12.785579] (testbot) CommandEnded: {'returncode': 0}
+[12.791895] (gz_ros2_control_tests) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[12.794540] (ign_ros2_control_demos) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[12.797174] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[12.799720] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[12.809810] (testbot) JobEnded: {'identifier': 'testbot', 'rc': 0}
+[12.835574] (-) TimerEvent: {}
+[12.844712] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[12.847558] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[12.849775] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[12.849884] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[12.850161] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[12.852151] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[12.852574] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[12.852743] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[12.852958] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[12.854956] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[12.909524] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[12.909871] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[12.915121] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[12.915302] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[12.915588] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[12.917412] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[12.918827] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[12.918919] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[12.919526] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[12.922456] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[12.935766] (-) TimerEvent: {}
+[13.036025] (-) TimerEvent: {}
+[13.039643] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[13.046042] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[13.119707] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[13.125569] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[13.136127] (-) TimerEvent: {}
+[13.149773] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[13.153539] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[13.160899] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[13.171716] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.192374] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.198594] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[13.230381] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[13.235515] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[13.236202] (-) TimerEvent: {}
+[13.241300] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[13.250727] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.263715] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.336352] (-) TimerEvent: {}
+[13.436639] (-) TimerEvent: {}
+[13.536924] (-) TimerEvent: {}
+[13.570151] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[13.613162] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[13.615029] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[13.631005] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[13.636352] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[13.636993] (-) TimerEvent: {}
+[13.643166] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[13.673315] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[13.675564] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[13.691873] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[13.692079] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[13.698683] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[13.705819] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[13.737120] (-) TimerEvent: {}
+[13.746513] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[13.747479] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.755512] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[13.755664] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[13.805879] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[13.806582] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.837220] (-) TimerEvent: {}
+[13.841298] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[13.865339] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.9 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[13.867094] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[13.890604] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[13.914485] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[13.916283] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[13.922780] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[13.924581] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[13.924901] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[13.924974] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[13.926394] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[13.926471] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[13.926871] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[13.927596] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.928169] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[13.929395] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[13.929480] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[13.929824] (ign_ros2_control_demos) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.931051] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.931621] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[13.936104] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[13.936234] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[13.936306] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[13.936360] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[13.937293] (-) TimerEvent: {}
+[13.951300] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[13.952870] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Generating done\n'}
+[13.953748] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[13.954602] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[13.954723] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[13.954796] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[13.954899] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Build files have been written to: /home/rae/testbot_ws/build/ign_ros2_control_demos\n'}
+[13.955286] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[13.955365] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[13.955736] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[13.956160] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.956676] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[13.957310] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[13.957397] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[13.957639] (gz_ros2_control_tests) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.958418] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.965235] (ign_ros2_control_demos) CommandEnded: {'returncode': 0}
+[13.965847] (ign_ros2_control_demos) JobProgress: {'identifier': 'ign_ros2_control_demos', 'progress': 'build'}
+[13.966169] (ign_ros2_control_demos) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rae/testbot_ws/build/ign_ros2_control_demos', '--', '-j8', '-l8'], 'cwd': '/home/rae/testbot_ws/build/ign_ros2_control_demos', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/ign_ros2_control_demos'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[13.967294] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Generating done\n'}
+[13.968360] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Build files have been written to: /home/rae/testbot_ws/build/gz_ros2_control_tests\n'}
+[13.977304] (gz_ros2_control_tests) CommandEnded: {'returncode': 0}
+[13.977858] (gz_ros2_control_tests) JobProgress: {'identifier': 'gz_ros2_control_tests', 'progress': 'build'}
+[13.978127] (gz_ros2_control_tests) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rae/testbot_ws/build/gz_ros2_control_tests', '--', '-j8', '-l8'], 'cwd': '/home/rae/testbot_ws/build/gz_ros2_control_tests', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/gz_ros2_control_tests'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[14.006383] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/example_position.dir/examples/example_position.cpp.o\x1b[0m\n'}
+[14.006600] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/example_effort.dir/examples/example_effort.cpp.o\x1b[0m\n'}
+[14.006681] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/example_tricycle_drive.dir/examples/example_tricycle_drive.cpp.o\x1b[0m\n'}
+[14.006785] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/example_diff_drive.dir/examples/example_diff_drive.cpp.o\x1b[0m\n'}
+[14.007470] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o\x1b[0m\n'}
+[14.012718] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/example_velocity.dir/examples/example_velocity.cpp.o\x1b[0m\n'}
+[14.024895] (gz_ros2_control_tests) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test_position.dir/src/test_position.cpp.o\x1b[0m\n'}
+[14.037414] (-) TimerEvent: {}
+[14.137752] (-) TimerEvent: {}
+[14.238098] (-) TimerEvent: {}
+[14.338656] (-) TimerEvent: {}
+[14.439249] (-) TimerEvent: {}
+[14.539860] (-) TimerEvent: {}
+[14.640432] (-) TimerEvent: {}
+[14.740924] (-) TimerEvent: {}
+[14.841284] (-) TimerEvent: {}
+[14.941682] (-) TimerEvent: {}
+[15.042148] (-) TimerEvent: {}
+[15.142757] (-) TimerEvent: {}
+[15.243328] (-) TimerEvent: {}
+[15.343770] (-) TimerEvent: {}
+[15.444181] (-) TimerEvent: {}
+[15.544692] (-) TimerEvent: {}
+[15.645215] (-) TimerEvent: {}
+[15.745729] (-) TimerEvent: {}
+[15.846227] (-) TimerEvent: {}
+[15.946707] (-) TimerEvent: {}
+[16.047091] (-) TimerEvent: {}
+[16.147671] (-) TimerEvent: {}
+[16.248098] (-) TimerEvent: {}
+[16.348702] (-) TimerEvent: {}
+[16.449177] (-) TimerEvent: {}
+[16.549815] (-) TimerEvent: {}
+[16.650222] (-) TimerEvent: {}
+[16.750834] (-) TimerEvent: {}
+[16.851325] (-) TimerEvent: {}
+[16.951893] (-) TimerEvent: {}
+[17.052327] (-) TimerEvent: {}
+[17.152950] (-) TimerEvent: {}
+[17.253394] (-) TimerEvent: {}
+[17.353883] (-) TimerEvent: {}
+[17.454389] (-) TimerEvent: {}
+[17.554990] (-) TimerEvent: {}
+[17.655579] (-) TimerEvent: {}
+[17.756158] (-) TimerEvent: {}
+[17.856748] (-) TimerEvent: {}
+[17.957244] (-) TimerEvent: {}
+[18.057728] (-) TimerEvent: {}
+[18.158201] (-) TimerEvent: {}
+[18.258760] (-) TimerEvent: {}
+[18.277762] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable example_velocity\x1b[0m\n'}
+[18.358874] (-) TimerEvent: {}
+[18.459340] (-) TimerEvent: {}
+[18.521501] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 58%] Built target example_velocity\n'}
+[18.559460] (-) TimerEvent: {}
+[18.659913] (-) TimerEvent: {}
+[18.688824] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable example_tricycle_drive\x1b[0m\n'}
+[18.760029] (-) TimerEvent: {}
+[18.839135] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable example_effort\x1b[0m\n'}
+[18.860152] (-) TimerEvent: {}
+[18.901223] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable example_position\x1b[0m\n'}
+[18.930322] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 83%] Built target example_tricycle_drive\n'}
+[18.960288] (-) TimerEvent: {}
+[18.994293] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable example_diff_drive\x1b[0m\n'}
+[19.041573] (ign_ros2_control_demos) StdoutLine: {'line': b'[ 91%] Built target example_effort\n'}
+[19.057739] (ign_ros2_control_demos) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable example_gripper\x1b[0m\n'}
+[19.060405] (-) TimerEvent: {}
+[19.135768] (ign_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_position\n'}
+[19.160125] (ign_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_diff_drive\n'}
+[19.160453] (-) TimerEvent: {}
+[19.216791] (ign_ros2_control_demos) StdoutLine: {'line': b'[100%] Built target example_gripper\n'}
+[19.224497] (ign_ros2_control_demos) CommandEnded: {'returncode': 0}
+[19.251843] (ign_ros2_control_demos) JobProgress: {'identifier': 'ign_ros2_control_demos', 'progress': 'install'}
+[19.252081] (ign_ros2_control_demos) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rae/testbot_ws/build/ign_ros2_control_demos'], 'cwd': '/home/rae/testbot_ws/build/ign_ros2_control_demos', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/ign_ros2_control_demos'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[19.258493] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.258717] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch\n'}
+[19.258827] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/pendulum_example_position.launch.py\n'}
+[19.258913] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_velocity.launch.py\n'}
+[19.259006] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/diff_drive_example.launch.py\n'}
+[19.259121] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_position.launch.py\n'}
+[19.259195] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/pendulum_example_effort.launch.py\n'}
+[19.259274] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/tricycle_drive_example.launch.py\n'}
+[19.259353] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_effort.launch.py\n'}
+[19.259464] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py\n'}
+[19.259585] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config\n'}
+[19.259664] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/cart_controller_velocity.yaml\n'}
+[19.259749] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/diff_drive_controller_velocity.yaml\n'}
+[19.259828] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/cart_controller_position.yaml\n'}
+[19.259902] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/gripper_controller.yaml\n'}
+[19.259986] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/cart_controller_effort.yaml\n'}
+[19.260064] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//config/tricycle_drive_controller.yaml\n'}
+[19.260133] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf\n'}
+[19.260194] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_cart_velocity.xacro.urdf\n'}
+[19.260272] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_cart_position.xacro.urdf\n'}
+[19.260335] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_cart_effort.xacro.urdf\n'}
+[19.260394] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_diff_drive.xacro.urdf\n'}
+[19.260449] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_pendulum_position.xacro.urdf\n'}
+[19.260501] (-) TimerEvent: {}
+[19.260624] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_tricycle_drive.xacro.urdf\n'}
+[19.260703] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_gripper_mimic_joint.xacro.urdf\n'}
+[19.260762] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_pendulum_effort.xacro.urdf\n'}
+[19.260833] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_position\n'}
+[19.260904] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_position" to ""\n'}
+[19.260964] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_velocity\n'}
+[19.261581] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_velocity" to ""\n'}
+[19.261668] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_effort\n'}
+[19.262322] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_effort" to ""\n'}
+[19.262416] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_diff_drive\n'}
+[19.263017] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_diff_drive" to ""\n'}
+[19.263122] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_tricycle_drive\n'}
+[19.263722] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_tricycle_drive" to ""\n'}
+[19.263813] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_gripper\n'}
+[19.264583] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_gripper" to ""\n'}
+[19.264742] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/ign_ros2_control_demos\n'}
+[19.264827] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/ign_ros2_control_demos\n'}
+[19.264904] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/ament_prefix_path.sh\n'}
+[19.264994] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/ament_prefix_path.dsv\n'}
+[19.265259] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/path.sh\n'}
+[19.265342] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/path.dsv\n'}
+[19.265416] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.bash\n'}
+[19.265493] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.sh\n'}
+[19.265580] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.zsh\n'}
+[19.265643] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.dsv\n'}
+[19.265704] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.dsv\n'}
+[19.265764] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/packages/ign_ros2_control_demos\n'}
+[19.265823] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/cmake/ign_ros2_control_demosConfig.cmake\n'}
+[19.265880] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/cmake/ign_ros2_control_demosConfig-version.cmake\n'}
+[19.265939] (ign_ros2_control_demos) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.xml\n'}
+[19.267015] (ign_ros2_control_demos) CommandEnded: {'returncode': 0}
+[19.280869] (gz_ros2_control_tests) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_position\x1b[0m\n'}
+[19.303968] (ign_ros2_control_demos) JobEnded: {'identifier': 'ign_ros2_control_demos', 'rc': 0}
+[19.360626] (-) TimerEvent: {}
+[19.433117] (gz_ros2_control_tests) StdoutLine: {'line': b'[100%] Built target test_position\n'}
+[19.441367] (gz_ros2_control_tests) CommandEnded: {'returncode': 0}
+[19.458617] (gz_ros2_control_tests) JobProgress: {'identifier': 'gz_ros2_control_tests', 'progress': 'install'}
+[19.458893] (gz_ros2_control_tests) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rae/testbot_ws/build/gz_ros2_control_tests'], 'cwd': '/home/rae/testbot_ws/build/gz_ros2_control_tests', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rae'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rae/testbot_ws/install/ign_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/rae'), ('OLDPWD', '/home/rae/testbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1619'), ('SYSTEMD_EXEC_PID', '2122'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14154'), ('COLCON_PREFIX_PATH', '/home/rae/testbot_ws/install:/home/rae/test_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rae'), ('JOURNAL_STREAM', '8:36012'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rae'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rae-Asus-TUF-Dash-F15:@/tmp/.ICE-unix/2104,unix/rae-Asus-TUF-Dash-F15:/tmp/.ICE-unix/2104'), ('INVOCATION_ID', 'dae169d0a98041bebad843f4b10d4be3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:8b5261cd-b201-4456-89b3-9e3859657bd1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rae/testbot_ws/build/gz_ros2_control_tests'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rae/testbot_ws/install/ign_ros2_control:/home/rae/testbot_ws/install/testbot:/home/rae/test_ws/install/test_robot_control:/home/rae/test_ws/install/test_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[19.460682] (-) TimerEvent: {}
+[19.465837] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.465986] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/lib/gz_ros2_control_tests/test_position\n'}
+[19.466639] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Set runtime path of "/home/rae/testbot_ws/install/gz_ros2_control_tests/lib/gz_ros2_control_tests/test_position" to ""\n'}
+[19.466708] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests//urdf\n'}
+[19.466766] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests//urdf/test_cart_position.xacro.urdf\n'}
+[19.466824] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests//config\n'}
+[19.466880] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests//config/cart_controller_position.yaml\n'}
+[19.466952] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/ament_index/resource_index/package_run_dependencies/gz_ros2_control_tests\n'}
+[19.467045] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/ament_index/resource_index/parent_prefix_path/gz_ros2_control_tests\n'}
+[19.467129] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/ament_prefix_path.sh\n'}
+[19.467194] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/ament_prefix_path.dsv\n'}
+[19.467259] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/path.sh\n'}
+[19.467323] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/path.dsv\n'}
+[19.467386] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.bash\n'}
+[19.467449] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.sh\n'}
+[19.467517] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.zsh\n'}
+[19.467578] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.dsv\n'}
+[19.467641] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.dsv\n'}
+[19.467729] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/ament_index/resource_index/packages/gz_ros2_control_tests\n'}
+[19.467812] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/cmake/gz_ros2_control_testsConfig.cmake\n'}
+[19.467864] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/cmake/gz_ros2_control_testsConfig-version.cmake\n'}
+[19.467916] (gz_ros2_control_tests) StdoutLine: {'line': b'-- Installing: /home/rae/testbot_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.xml\n'}
+[19.469347] (gz_ros2_control_tests) CommandEnded: {'returncode': 0}
+[19.495559] (gz_ros2_control_tests) JobEnded: {'identifier': 'gz_ros2_control_tests', 'rc': 0}
+[19.496104] (-) EventReactorShutdown: {}

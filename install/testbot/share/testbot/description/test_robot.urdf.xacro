@@ -1,7 +1,1 @@
-<?xml version="1.0"?>
-<robot name="test_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-
-    <xacro:include filename="test_robot_core.xacro" />
-    <xacro:include filename="ros2_control.xacro" />
-    <xacro:include filename="lidar.xacro" />
-</robot>
+/home/rae/testbot_ws/src/testbot/description/test_robot.urdf.xacro
