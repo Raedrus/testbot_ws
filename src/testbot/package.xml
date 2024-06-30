@@ -11,11 +11,16 @@
 
   <depend>rclcpp</depend>
   <depend>xacro</depend>
-  <depend>robot_state_publisher</depend>
-  <depend>controller_manager</depend>
-  <depend>ros2_control</depend>
-  <depend>hardware_interface</depend>
-  <exec_depend>gz_ros2_control</exec_depend>
+  
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>hardware_interface</exec_depend>
+  <exec_depend>ign_ros2_control</exec_depend>
+  <exec_depend>ros_ign_gazebo</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>ros2controlcli</exec_depend>
+  <exec_depend>velocity_controllers</exec_depend>
+  <exec_depend>diff_drive_controller</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

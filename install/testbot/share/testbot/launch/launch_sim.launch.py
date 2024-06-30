@@ -19,26 +19,17 @@ def generate_launch_description():
 
     package_name='testbot' #<--- CHANGE ME
 
-    # # Declare the launch argument for the world file, 'empty.sdf' loaded at default.
-    # # Add world:=/path/to/desired/worldfile for manual world file selection.
-
-    # diff_drive_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["diff_cont"],
-    # )
-
-    # joint_broad_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["joint_broad"],
-    # )
-
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
                 )]), launch_arguments={'use_sim_time': 'true'}.items()
     )
+
+
+    # # Declare the launch argument for the world file, 'empty.sdf' loaded at default.
+    # # Add world:=/path/to/desired/worldfile for manual world file selection.
+
+    
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
     # gazebo = IncludeLaunchDescription(
@@ -56,17 +47,28 @@ def generate_launch_description():
                         arguments=['-topic', 'robot_description'],
                         output='screen')
 
+    diff_drive_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["diff_cont","--controller-manager", "/controller_manager"],
+    )
 
+    joint_broad_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_broad","--controller-manager", "/controller_manager"],
+    )
     
 
 
     # Launch them all!
     return LaunchDescription([
         rsp,
-        gazebo,
+        
         # declare_world_cmd,
-        # diff_drive_spawner,
-        # joint_broad_spawner,
+        gazebo,
         spawn_entity,
+        diff_drive_spawner,
+        joint_broad_spawner
 
     ])

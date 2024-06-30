@@ -1,1 +1,1 @@
-controller_manager:gz_ros2_control:hardware_interface:rclcpp:robot_state_publisher:ros2_control:xacro
+diff_drive_controller:hardware_interface:ign_ros2_control:joint_state_broadcaster:joint_trajectory_controller:rclcpp:ros2controlcli:ros_gz_bridge:ros_ign_gazebo:velocity_controllers:xacro
