@@ -1,2 +1,0 @@
-Invoking command in '/home/rae/testbot_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rae/testbot_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/gz_ros2_control
-Invoked command in '/home/rae/testbot_ws/build/gz_ros2_control' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rae/testbot_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/gz_ros2_control

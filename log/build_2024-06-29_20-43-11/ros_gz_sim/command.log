@@ -1,2 +1,0 @@
-Invoking command in '/home/rae/testbot_ws/build/ros_gz_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rae/testbot_ws/src/ros_ign/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/ros_gz_sim
-Invoked command in '/home/rae/testbot_ws/build/ros_gz_sim' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rae/testbot_ws/src/ros_ign/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/ros_gz_sim

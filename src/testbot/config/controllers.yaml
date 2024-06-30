@@ -1,5 +1,5 @@
 controller_manager:
-  ros_parameters:
+  ros__parameters:
     # applied to the whole controller
     update_rate: 30
     use_sim_time: true
@@ -14,6 +14,7 @@ controller_manager:
 
 diff_cont:
   ros__parameters:
+    type: diff_drive_controller/DiffDriveController
     publish_rate: 50.0
     base_frame_id: base_footprint
 
@@ -67,3 +68,4 @@ diff_cont:
 
 # joint_broad:
 #   ros__parameters:
+    
