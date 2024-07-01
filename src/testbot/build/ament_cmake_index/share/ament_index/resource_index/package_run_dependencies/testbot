@@ -1,1 +1,0 @@
-rclcpp;xacro;geometry_msgs;tf2;tf2_ros;joint_state_broadcaster;joint_trajectory_controller;hardware_interface;ros_gz_bridge;ros2controlcli;velocity_controllers;diff_drive_controller;ament_lint_auto;ament_lint_common

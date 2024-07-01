@@ -82,6 +82,15 @@ def generate_launch_description():
     #     output='screen'
     # )
 
+    teleop_node = Node(
+            package='teleop_twist_keyboard',
+            executable='teleop_twist_keyboard',
+            name='teleop_node',
+            parameters=[{'use_sim_time': True}],
+            remappings=[('/cmd_vel','/cmd_vel_keyb')],
+            prefix='xterm -e'
+    )
+
 
     bridge = Node(
         package='ros_gz_bridge',
@@ -94,6 +103,7 @@ def generate_launch_description():
                    #'/rgbd/camera/points@sensor_msgs/msg/PointCloud2@ignition.msgs.PointCloudPacked',
                    #'/rgbd/camera/image@sensor_msgs/msg/Image@ignition.msgs.Image',
                    '/cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist',
+                   '/cmd_vel_keyb@geometry_msgs/msg/Twist]ignition.msgs.Twist',
                    '/odometry@nav_msgs/msg/Odometry[ignition.msgs.Odometry',
                    '/joint_state@sensor_msgs/msg/JointState[ignition.msgs.Model',
                    #'/odom@nav_msgs/msg/Odometry@ignition.msgs.OdometryWithCovariance',
@@ -112,6 +122,7 @@ def generate_launch_description():
         rsp,
         gazebo,
         spawn_entity,
+        teleop_node,
         # # control_node,
         # RegisterEventHandler(
         #     event_handler=OnProcessExit(
