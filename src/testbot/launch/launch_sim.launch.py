@@ -14,6 +14,15 @@ from launch.substitutions import LaunchConfiguration, TextSubstitution
 from launch.actions import ExecuteProcess
 import xacro
 
+def generate_static_tf_publisher_node(parentFrame, childFrame):
+    return Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        name=f"static_tf_publisher_{parentFrame}",
+        arguments=["0", "0", "0", "0", "0", "0", parentFrame, childFrame],
+        parameters=[{"use_sim_time": True}],
+    )
+
 def generate_launch_description():
 
     
@@ -77,21 +86,23 @@ def generate_launch_description():
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
+        parameters=[{"use_sim_time": True}],
         arguments=[#'/device/imu/data@sensor_msgs/msg/Imu@ignition.msgs.IMU',
                    #'/navsat/fix@sensor_msgs/msg/NavSatFix@ignition.msgs.NavSat',
                    #'/rgbd/camera/depth_image@sensor_msgs/msg/Image@ignition.msgs.Image',
                    #'/rgbd/camera/camera_info@sensor_msgs/msg/CameraInfo@ignition.msgs.CameraInfo',
                    #'/rgbd/camera/points@sensor_msgs/msg/PointCloud2@ignition.msgs.PointCloudPacked',
                    #'/rgbd/camera/image@sensor_msgs/msg/Image@ignition.msgs.Image',
-                   '/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist',
-                   '/odom@nav_msgs/msg/Odometry@ignition.msgs.Odometry',
+                   '/cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist',
+                   '/odometry@nav_msgs/msg/Odometry[ignition.msgs.Odometry',
+                   '/joint_state@sensor_msgs/msg/JointState[ignition.msgs.Model',
                    #'/odom@nav_msgs/msg/Odometry@ignition.msgs.OdometryWithCovariance',
                    #'/sensor_msgs/msg/JointState	gz.msgs.Model',
-                   '/tf@tf2_msgs/msg/TFMessage@ignition.msgs.Pose_V',
+                   '/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V',
                    '/clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock',
-                   '/LaserScan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan'
+                   '/scan@sensor_msgs/msg/LaserScan[ignition.msgs.LaserScan'
                    ],
-        output='screen'
+        output="screen"
     )
 
     # Launch them all!

@@ -43,6 +43,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/testbot/" TYPE DIRECTORY FILES
+    "/home/rae/testbot_ws/src/testbot/launch"
+    "/home/rae/testbot_ws/src/testbot/description"
+    "/home/rae/testbot_ws/src/testbot/config"
+    "/home/rae/testbot_ws/src/testbot/worlds"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rae/testbot_ws/src/testbot/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/testbot")
 endif()
 
