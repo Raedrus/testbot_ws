@@ -3,35 +3,14 @@
 
     
     <!-- INITIATE GAZEBO LIDAR SENSOR -->
-    <link name="lidar_link">
-        <visual>
-            <geometry>
-                <cylinder radius="0.09" length="0.05" />
-            </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <material name="white" />
-        </visual>
-        <collision>
-            <geometry>
-                <box size ="0.18 0.18 0.05" />
-            </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0" />
-        </collision>
-    </link>
-
-    <joint name="base_laser_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="lidar_link"/>
-        <origin xyz="0 0 0.225" rpy="0 0 0"/>
-    </joint>
-
 
 
     <gazebo reference="lidar_link">
         <sensor name="lidar_sensor" type="gpu_lidar">
-            <topic>LaserScan</topic>
+            <ignition_frame_id>lidar_link</ignition_frame_id>
+            <topic>scan</topic>
             <pose>0 0 0 0 0 0</pose>
-            <update_rate>5</update_rate>
+            <update_rate>10</update_rate>
             <ray>
                 <scan>
                     <horizontal>
@@ -44,7 +23,7 @@
                 <range>
                     <min>0.3</min>
                     <max>12</max>
-                    <resolution>0.01</resolution>
+                    <resolution>1</resolution>
                 </range>
             </ray>
             <always_on>1</always_on>
