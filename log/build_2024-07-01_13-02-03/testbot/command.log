@@ -1,6 +1,0 @@
-Invoking command in '/home/rae/testbot_ws/build/testbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rae/testbot_ws/src/testbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/testbot
-Invoked command in '/home/rae/testbot_ws/build/testbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rae/testbot_ws/src/testbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rae/testbot_ws/install/testbot
-Invoking command in '/home/rae/testbot_ws/build/testbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rae/testbot_ws/build/testbot -- -j8 -l8
-Invoked command in '/home/rae/testbot_ws/build/testbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rae/testbot_ws/build/testbot -- -j8 -l8
-Invoking command in '/home/rae/testbot_ws/build/testbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rae/testbot_ws/build/testbot
-Invoked command in '/home/rae/testbot_ws/build/testbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rae/testbot_ws/build/testbot
